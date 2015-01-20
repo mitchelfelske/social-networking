@@ -7,7 +7,7 @@ My own version of Jeff Dickey's application from the book "Write Modern Web Apps
 
 ### Chapter 6
 
-** Page 84 **
+**Page 84**
 
 ```sh
  $ sudo apt-get install nodejs-legacy
