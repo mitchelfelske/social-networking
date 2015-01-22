@@ -14,4 +14,4 @@ gulp.task('watch:css', ['css'], function () {
     gulp.watch('css/**/*.styl', ['css']);
 })
 
-gulp.task('brackets-default', ['watch:js', 'watch:css']);
+gulp.task('brackets-default', ['watch:js', 'watch:css', 'boot:server']);
