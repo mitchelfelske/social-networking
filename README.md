@@ -4,3 +4,4 @@ My own version of Jeff Dickey's application from the book "Write Modern Web Apps
 **Goal:** Put the MEAN stack knowledge into practice.
 
 Check the wiki page to see what's going on!
+

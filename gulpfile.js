@@ -1,9 +1,17 @@
 var gulp = require('gulp');
+var fs = require('fs');
 
-gulp.task('welcome', function () {
-    console.log('welcome to gulp!');
+fs.readdirSync(__dirname + '/gulp')
+    .forEach(function (task) {
+        require('./gulp/' + task);
+    })
+
+gulp.task('watch:js', ['js'], function () {
+    gulp.watch('ng/**/*.js', ['js']);
 })
 
-gulp.task('hello', ['welcome'], function () {
-    console.log('hello world');
+gulp.task('watch:css', ['css'], function () {
+    gulp.watch('css/**/*.styl', ['css']);
 })
+
+gulp.task('brackets-default', ['watch:js', 'watch:css', 'boot:server']);
